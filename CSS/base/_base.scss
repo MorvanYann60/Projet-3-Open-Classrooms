@@ -17,6 +17,7 @@
 .presentation {
     @include display-flex;
     background-color: #f2f2f2;
+    width: 100%;
     h1 {
         width: 80%;
         margin-top: 40px;
@@ -61,6 +62,13 @@
     box-shadow: 2px 2px 10px #cfc5c5;
     border: 2px solid #f2f2f2;
     border-radius: 15px;
+    &:hover {
+        background-color: $couleur-partie-fonctionnement;
+        /*border: 1px solid $couleur-partie-fonctionnement;*/
+        i {
+            color: $couleur-pricipal;
+        }
+    }
     .numero {
         position: absolute;
         left: 30px;

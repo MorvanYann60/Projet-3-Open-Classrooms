@@ -3,3 +3,16 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@mixin nouveau {
+    width: 60px;
+    position: relative;
+    left: 230px;
+    bottom: 175px;
+    color: #317463;
+    font-size: 15px;
+    background-color: $couleur-tertiaire;
+    border: 2px solid $couleur-tertiaire;
+    border-radius: 2px;
+    padding: 10px;
+}

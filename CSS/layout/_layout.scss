@@ -16,3 +16,36 @@ header {
 p {
     font-family: $police-texte;
 }
+
+.pied-de-page {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(66, 65, 65);
+    color: white;
+    padding-top: 40px;
+    .informations {
+        width: 70%;
+        margin-left: 20px;
+        .logo-footer {
+            width: 140px;
+            color: white;
+            filter: invert(100%);
+        }
+        ul {
+            padding-left: 0px;
+            list-style-type: none;
+            li {
+                font-size: 20px;
+                font-family: $police-texte;
+                padding-bottom: 10px;
+                i {
+                    padding-right: 10px;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
