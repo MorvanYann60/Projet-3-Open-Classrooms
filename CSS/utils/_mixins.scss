@@ -6,9 +6,9 @@
 
 @mixin nouveau {
     width: 60px;
-    position: relative;
-    left: 230px;
-    bottom: 175px;
+    position: absolute;
+    right: 15px;
+    bottom: 155px;
     color: #317463;
     font-size: 15px;
     background-color: $couleur-tertiaire;

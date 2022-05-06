@@ -8,6 +8,14 @@ header {
     @include display-flex;
 }
 
+.fleche {
+    color: black;
+    position: relative;
+    right: 66px;
+    top: 3px;
+    font-size: 19px;
+}
+
 .logo {
     width: 150px;
     margin-bottom: 10px;

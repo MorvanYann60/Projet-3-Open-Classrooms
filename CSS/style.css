@@ -56,11 +56,12 @@
 .presentation button {
   margin-bottom: 40px;
   cursor: pointer;
-  border: 2px solid #9356DC;
+  border: 2px solid #FF79DA;
   border-radius: 25px;
   padding: 15px;
   color: white;
-  background-color: #9356DC;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to top, #9356DC, #FF79DA);
   font-family: "Roboto", sans-serif;
 }
 
@@ -89,6 +90,7 @@
           box-shadow: 2px 2px 10px #cfc5c5;
   border: 2px solid #f2f2f2;
   border-radius: 15px;
+  position: relative;
 }
 
 .bloc-fonctionnement:hover {
@@ -102,7 +104,7 @@
 
 .bloc-fonctionnement .numero {
   position: absolute;
-  left: 30px;
+  left: -10px;
   text-align: center;
   font-size: 13px;
   margin-top: 15px;
@@ -159,12 +161,26 @@
   line-height: 5px;
   font-family: "Roboto", sans-serif;
   padding-left: 10px;
+  position: relative;
+}
+
+.restaurants .restaurant-texte .nouveau {
+  width: 60px;
+  position: absolute;
+  right: 15px;
+  bottom: 155px;
+  color: #317463;
+  font-size: 15px;
+  background-color: #99E2D0;
+  border: 2px solid #99E2D0;
+  border-radius: 2px;
+  padding: 10px;
 }
 
 .restaurants .restaurant-texte i {
-  position: relative;
-  left: 280px;
-  bottom: 45px;
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
   font-size: 25px;
 }
 
@@ -183,6 +199,14 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.fleche {
+  color: black;
+  position: relative;
+  right: 66px;
+  top: 3px;
+  font-size: 19px;
 }
 
 .logo {
