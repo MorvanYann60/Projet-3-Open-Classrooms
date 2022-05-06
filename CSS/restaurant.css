@@ -34,7 +34,7 @@ p {
 
 .pied-de-page {
   width: 100%;
-  height: 200px;
+  height: 192px;
   background-color: #424141;
   color: white;
   padding-top: 40px;
@@ -84,6 +84,11 @@ p {
   bottom: 50px;
   background-color: #f2f2f2;
   border-radius: 40px 40px 0px 0px;
+  height: 1092px;
+}
+
+.changement-hauteur {
+  height: 1185px;
 }
 
 .titre {
@@ -108,17 +113,20 @@ p {
   font-size: 25px;
 }
 
-.entree {
+.propositions {
   font-family: "Roboto", sans-serif;
+  margin-top: 25px;
 }
 
-.entree h2 {
+.propositions h2 {
   font-size: 17px;
   font-weight: normal;
-  padding-left: 25px;
+  width: 90%;
+  margin: auto;
+  height: 40px;
 }
 
-.entree .proposition-entree {
+.propositions .proposition-plat {
   width: 90%;
   margin: auto;
   height: 63px;
@@ -130,17 +138,17 @@ p {
           box-shadow: 2px 2px 10px #cfc5c5;
 }
 
-.entree .proposition-entree h3 {
+.propositions .proposition-plat h3 {
   font-size: 17px;
   padding-left: 5px;
   padding-top: 5px;
 }
 
-.entree .proposition-entree p {
+.propositions .proposition-plat p {
   font-size: 15px;
 }
 
-.entree .proposition-entree .proposition-texte {
+.propositions .proposition-plat .proposition-texte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,5 +159,39 @@ p {
   padding-right: 20px;
   position: relative;
   bottom: 10px;
+}
+
+.ajout-hauteur {
+  height: 110px;
+}
+
+.bouton-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.bouton-restaurant button {
+  text-align: center;
+  margin-bottom: 40px;
+  cursor: pointer;
+  border: 0px solid #FF79DA;
+  border-radius: 25px;
+  -webkit-box-shadow: 4px 4px 10px #cfcfcf;
+          box-shadow: 4px 4px 10px #cfcfcf;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  font-family: "Roboto", sans-serif;
 }
 /*# sourceMappingURL=restaurant.css.map */
