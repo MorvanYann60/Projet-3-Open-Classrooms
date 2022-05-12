@@ -116,6 +116,10 @@ p {
 .propositions {
   font-family: "Roboto", sans-serif;
   margin-top: 25px;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 .propositions h2 {
@@ -164,6 +168,32 @@ p {
   padding-right: 20px;
   position: relative;
   bottom: 10px;
+}
+
+@-webkit-keyframes apparition {
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .ajout-hauteur {

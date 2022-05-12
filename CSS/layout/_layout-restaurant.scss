@@ -33,6 +33,20 @@
 
 .propositions {
     @include plat-restaurant;
+    animation-name: apparition;
+    animation-duration: 1000ms;
+}
+
+@keyframes apparition {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
 }
 
 .ajout-hauteur {
