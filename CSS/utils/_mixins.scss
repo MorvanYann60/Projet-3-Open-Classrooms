@@ -27,6 +27,10 @@
         margin: auto;
         height: 40px;
     }
+    span {
+        padding-bottom: 5px;
+        border-bottom: 3px solid $couleur-tertiaire;
+    }
     .proposition-plat {
         width: 90%;
         margin: auto;

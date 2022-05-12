@@ -151,6 +151,7 @@
   margin: auto;
   height: 250px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .restaurants .bloc-restaurant a {
@@ -186,11 +187,12 @@
   padding: 10px;
 }
 
-.restaurants .restaurant-texte i {
+.fa-heart {
   position: absolute;
   right: 20px;
-  bottom: 5px;
+  bottom: 30px;
   font-size: 25px;
+  color: #FF79DA;
 }
 
 .bloc-page {

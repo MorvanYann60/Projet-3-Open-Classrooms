@@ -126,6 +126,11 @@ p {
   height: 40px;
 }
 
+.propositions span {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+}
+
 .propositions .proposition-plat {
   width: 90%;
   margin: auto;

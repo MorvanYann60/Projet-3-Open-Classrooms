@@ -113,6 +113,7 @@
         margin: auto;
         height: 250px;
         margin-bottom: 20px;
+        position: relative;
         a {
             text-decoration: none;
             color: black;
@@ -132,12 +133,14 @@
         .nouveau {
             @include nouveau;
         }
-        i {
-            position: absolute;
-            right: 20px;
-            bottom: 5px;
-            font-size: 25px;
-        }
     }
+}
+
+.fa-heart {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    font-size: 25px;
+    color: $couleur-secondaire;
 }
 
