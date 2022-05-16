@@ -116,10 +116,13 @@ p {
 .propositions {
   font-family: "Roboto", sans-serif;
   margin-top: 25px;
+  opacity: 0;
   -webkit-animation-name: apparition;
           animation-name: apparition;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .propositions h2 {
@@ -168,6 +171,161 @@ p {
   padding-right: 20px;
   position: relative;
   bottom: 10px;
+}
+
+.propositions--1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.propositions--2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.propositions--3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.propositions--4 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.propositions--5 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.propositions--6 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.propositions--7 {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.propositions--8 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.propositions--9 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.proposition {
+  font-family: "Roboto", sans-serif;
+  margin-top: 25px;
+  opacity: 0;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.proposition h2 {
+  font-size: 17px;
+  font-weight: normal;
+  width: 90%;
+  margin: auto;
+  height: 40px;
+}
+
+.proposition span {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.proposition .proposition-plat {
+  width: 90%;
+  margin: auto;
+  height: 63px;
+  line-height: 0px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 10px #cfc5c5;
+          box-shadow: 2px 2px 10px #cfc5c5;
+}
+
+.proposition .proposition-plat h3 {
+  font-size: 17px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.proposition .proposition-plat p {
+  font-size: 15px;
+}
+
+.proposition .proposition-plat .proposition-texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 20px;
+  position: relative;
+  bottom: 10px;
+}
+
+.proposition__1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.proposition__2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.proposition__3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.proposition__4 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.proposition__5 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.proposition__6 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.proposition__7 {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.proposition__8 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.proposition__9 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.proposition__10 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 
 @-webkit-keyframes apparition {

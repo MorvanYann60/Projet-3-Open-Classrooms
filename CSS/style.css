@@ -187,12 +187,70 @@
   padding: 10px;
 }
 
-.fa-heart {
+.coeur-rempli {
   position: absolute;
   right: 20px;
   bottom: 30px;
   font-size: 25px;
-  color: #FF79DA;
+  opacity: 0;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+}
+
+.coeur-rempli:hover {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: remplisage 200ms ease-in-out both;
+          animation: remplisage 200ms ease-in-out both;
+}
+
+.fa-regular {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  font-size: 25px;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+}
+
+@-webkit-keyframes remplisage {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes remplisage {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .bloc-page {

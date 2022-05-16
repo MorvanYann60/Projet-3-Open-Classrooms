@@ -33,8 +33,20 @@
 
 .propositions {
     @include plat-restaurant;
+    opacity: 0;
     animation-name: apparition;
     animation-duration: 1000ms;
+    animation-fill-mode: both;
+    @include boucle;
+}
+
+.proposition {
+    @include plat-restaurant;
+    opacity: 0;
+    animation-name: apparition;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    @include boucle2;
 }
 
 @keyframes apparition {

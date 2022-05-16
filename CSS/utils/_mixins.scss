@@ -4,6 +4,12 @@
     justify-content: center;
 }
 
+@mixin coeur {
+    color: transparent;
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    background-clip: text;
+}
+
 @mixin nouveau {
     width: 60px;
     position: absolute;
@@ -55,6 +61,22 @@
             padding-right: 20px;
             position: relative;
             bottom: 10px;
+        }
+    }
+}
+
+@mixin boucle {
+    @for $i from 1 through 9 {
+        &--#{$i} {
+            animation-delay: 100ms * $i;
+        }
+    }
+}
+
+@mixin boucle2 {
+    @for $i from 1 through 10 {
+        &__#{$i} {
+            animation-delay: 100ms * $i;
         }
     }
 }

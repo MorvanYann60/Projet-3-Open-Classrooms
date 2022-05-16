@@ -136,11 +136,43 @@
     }
 }
 
-.fa-heart {
+.coeur-rempli {
     position: absolute;
     right: 20px;
     bottom: 30px;
     font-size: 25px;
-    color: $couleur-secondaire;
+    opacity: 0;
+    @include coeur;
+    &:hover {
+        transform-origin: bottom;
+        animation: remplisage 200ms ease-in-out both;
+    }
+}
+
+.fa-regular {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    font-size: 25px;
+    @include coeur;
+}
+
+
+@keyframes remplisage {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
