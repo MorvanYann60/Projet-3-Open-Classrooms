@@ -1,3 +1,152 @@
+.container {
+  background-color: white;
+  opacity: 0.8;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: loader 1s 3s ease-in-out both;
+          animation: loader 1s 3s ease-in-out both;
+}
+
+.container .load {
+  width: 13%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .load__bar {
+  background-color: #9356DC;
+  width: 10%;
+  height: 100%;
+  -webkit-animation: bars 600ms backwards infinite ease-in-out alternate;
+          animation: bars 600ms backwards infinite ease-in-out alternate;
+}
+
+.container .load__bar--1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.container .load__bar--1-inv {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  animation-direction: alternate-reverse;
+  background-color: #FF79DA;
+}
+
+.container .load__bar--2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.container .load__bar--2-inv {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  animation-direction: alternate-reverse;
+  background-color: #FF79DA;
+}
+
+.container .load__bar--3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.container .load__bar--3-inv {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  animation-direction: alternate-reverse;
+  background-color: #FF79DA;
+}
+
+.container .load__bar--4 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.container .load__bar--4-inv {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  animation-direction: alternate-reverse;
+  background-color: #FF79DA;
+}
+
+.container .load__bar--5 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.container .load__bar--5-inv {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  animation-direction: alternate-reverse;
+  background-color: #FF79DA;
+}
+
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes loader {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes bars {
+  0% {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes bars {
+  0% {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
 .localisation {
   width: 100%;
   display: -webkit-box;

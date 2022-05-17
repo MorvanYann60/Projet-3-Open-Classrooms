@@ -65,6 +65,19 @@
     }
 }
 
+@mixin boucle-bars {
+    @for $i from 1 through 5 {
+        &--#{$i} {
+            animation-delay: 100ms * $i;
+        }
+        &--#{$i}-inv {
+            animation-delay: 100ms * $i;
+            animation-direction: alternate-reverse;
+            background-color: $couleur-secondaire;
+        }
+    }
+}
+
 @mixin boucle {
     @for $i from 1 through 9 {
         &--#{$i} {
