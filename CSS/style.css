@@ -25,7 +25,7 @@
 }
 
 .container .load {
-  width: 13%;
+  width: 40%;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,7 +348,7 @@
   background-clip: text;
 }
 
-.coeur-rempli:hover {
+.coeur-rempli:active {
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   -webkit-animation: remplisage 200ms ease-in-out both;

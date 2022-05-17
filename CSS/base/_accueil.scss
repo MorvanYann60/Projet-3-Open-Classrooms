@@ -12,7 +12,7 @@
     transform-origin: top;
     animation: loader 1s 3s ease-in-out both;
     .load {
-        width: 13%;
+        width: 40%;
         height: 120px;
         display: flex;
         justify-content: space-evenly;
@@ -189,7 +189,7 @@
     font-size: 25px;
     opacity: 0;
     @include coeur;
-    &:hover {
+    &:active {
         transform-origin: bottom;
         animation: remplisage 200ms ease-in-out both;
     }
