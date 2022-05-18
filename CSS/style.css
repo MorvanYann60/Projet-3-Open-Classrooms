@@ -18,8 +18,6 @@
   position: fixed;
   inset: 0;
   z-index: 1;
-  -webkit-transform-origin: top;
-          transform-origin: top;
   -webkit-animation: loader 1s 3s ease-in-out both;
           animation: loader 1s 3s ease-in-out both;
 }

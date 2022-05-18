@@ -84,3 +84,21 @@
         font-family: $police-texte;
     }
 }
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-80px);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
