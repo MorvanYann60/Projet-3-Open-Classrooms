@@ -340,13 +340,16 @@
   bottom: 30px;
   font-size: 25px;
   opacity: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
   color: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
 }
 
-.coeur-rempli:active {
+.coeur-rempli:hover {
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   -webkit-animation: remplisage 200ms ease-in-out both;
@@ -358,6 +361,9 @@
   right: 20px;
   bottom: 30px;
   font-size: 25px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
   color: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
@@ -397,6 +403,75 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .container .load {
+    width: 20%;
+  }
+  .presentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .presentation p {
+    width: 50%;
+  }
+  .fonctionnement {
+    height: 206px;
+  }
+  .fonctionnement h2 {
+    text-align: center;
+  }
+  .fonctionnement .bloc-modif {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fonctionnement .bloc-modif .bloc-fonctionnement {
+    margin-bottom: 5px;
+    width: 43%;
+  }
+  .restaurants {
+    height: 650px;
+  }
+  .restaurants h2 {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .restaurants .restaurant-groupe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurants .restaurant-groupe .bloc-restaurant {
+    width: 43%;
+    height: 237px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container .load {
+    width: 15%;
+  }
+  .fonctionnement {
+    height: 140px;
+  }
+  .fonctionnement .bloc-modif {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -472,5 +547,13 @@ p {
 .pied-de-page .informations ul li a {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (min-width: 767px) {
+  .pied-de-page .informations {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
