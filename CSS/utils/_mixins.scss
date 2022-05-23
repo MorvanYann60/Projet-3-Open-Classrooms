@@ -105,6 +105,11 @@
     }
 }
 
+@mixin apparition-restaurant {
+    opacity: 0;
+    animation: apparition 1000ms both;
+}
+
 @mixin boucle-bars {
     @for $i from 1 through 5 {
         &--#{$i} {

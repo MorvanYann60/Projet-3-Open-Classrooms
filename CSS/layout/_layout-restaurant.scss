@@ -43,21 +43,30 @@ h2 {
     }
 }
 
+.titre--1 {
+    @include apparition-restaurant;
+    animation-delay: 100ms
+}
+
+.titre--2 {
+    @include apparition-restaurant;
+    animation-delay: 400ms
+}
+
+.titre--3 {
+    @include apparition-restaurant;
+    animation-delay: 700ms;
+}
+
 .propositions {
     @include plat-restaurant;
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
+    @include apparition-restaurant;
     @include boucle;
 }
 
 .proposition {
     @include plat-restaurant;
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
+    @include apparition-restaurant;
     @include boucle2;
 }
 
@@ -121,11 +130,12 @@ h2 {
 
 @media screen and (min-width: 767px) {
     .plat {
+        display: flex;
+        flex-wrap: wrap;
         height: 860px;
         .titre {
-            justify-content: space-between;
-            padding-left: 40px;
-            padding-right: 60px;
+            justify-content: center;
+            width: 100%;
         }
     }
     .bloc-modif {
@@ -139,6 +149,24 @@ h2 {
         }
         .propositions .proposition-plat {
             width: 339px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .plat {
+        height: 506px;
+        .titre {
+            margin-bottom: 30px;
+        }
+    }
+    .bloc-restaurants {
+        width: 60%;
+        margin: auto;
+        .bloc-annonces {
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
     }
 }

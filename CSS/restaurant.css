@@ -134,16 +134,36 @@ h2 span {
   border-bottom: 3px solid #99E2D0;
 }
 
+.titre--1 {
+  opacity: 0;
+  -webkit-animation: apparition 1000ms both;
+          animation: apparition 1000ms both;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.titre--2 {
+  opacity: 0;
+  -webkit-animation: apparition 1000ms both;
+          animation: apparition 1000ms both;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.titre--3 {
+  opacity: 0;
+  -webkit-animation: apparition 1000ms both;
+          animation: apparition 1000ms both;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
 .propositions {
   font-family: "Roboto", sans-serif;
   margin-top: 25px;
   opacity: 0;
-  -webkit-animation-name: apparition;
-          animation-name: apparition;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation: apparition 1000ms both;
+          animation: apparition 1000ms both;
 }
 
 .propositions h2 {
@@ -307,12 +327,8 @@ h2 span {
   font-family: "Roboto", sans-serif;
   margin-top: 25px;
   opacity: 0;
-  -webkit-animation-name: apparition;
-          animation-name: apparition;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation: apparition 1000ms both;
+          animation: apparition 1000ms both;
 }
 
 .proposition h2 {
@@ -590,14 +606,18 @@ h2 span {
 
 @media screen and (min-width: 767px) {
   .plat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 860px;
   }
   .plat .titre {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
   .bloc-modif {
     display: -webkit-box;
@@ -616,6 +636,28 @@ h2 span {
   }
   .bloc-modif .propositions .proposition-plat {
     width: 339px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .plat {
+    height: 506px;
+  }
+  .plat .titre {
+    margin-bottom: 30px;
+  }
+  .bloc-restaurants {
+    width: 60%;
+    margin: auto;
+  }
+  .bloc-restaurants .bloc-annonces {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=restaurant.css.map */
