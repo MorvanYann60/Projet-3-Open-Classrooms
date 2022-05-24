@@ -20,6 +20,35 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    .titre-page {
+        position: relative;
+    }
+    .coeur-rempli {
+        position: absolute;
+        right: 0px;
+        bottom: 17px;
+        font-size: 25px;
+        opacity: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0;
+        @include coeur;
+        &:hover {
+            transform-origin: bottom;
+            animation: remplisage 200ms ease-in-out both;
+        }
+    }
+    .fa-regular {
+        position: absolute;
+        right: 0px;
+        bottom: 17px;
+        font-size: 25px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0;
+        @include coeur;
+    }
     h1 {
         font-family: $police-logo-titre;
         font-size: 25px;
@@ -29,6 +58,28 @@
     i {
         font-size: 25px;
     }
+}
+
+@keyframes remplisage {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.bloc-propositions {
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -144,6 +195,12 @@ h2 {
         width: 100%;
         justify-content: center;
         margin-bottom: 25px;
+        .proposition {
+            margin-right: 14px;
+        }
+        .proposition .proposition-plat {
+            width: 339px;
+        }
         .propositions {
             margin-right: 14px;
         }

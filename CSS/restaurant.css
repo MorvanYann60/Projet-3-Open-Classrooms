@@ -108,6 +108,47 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.titre .titre-page {
+  position: relative;
+}
+
+.titre .coeur-rempli {
+  position: absolute;
+  right: 0px;
+  bottom: 17px;
+  font-size: 25px;
+  opacity: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+}
+
+.titre .coeur-rempli:hover {
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: remplisage 200ms ease-in-out both;
+          animation: remplisage 200ms ease-in-out both;
+}
+
+.titre .fa-regular {
+  position: absolute;
+  right: 0px;
+  bottom: 17px;
+  font-size: 25px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
 }
 
 .titre h1 {
@@ -119,6 +160,46 @@ p {
 
 .titre i {
   font-size: 25px;
+}
+
+@-webkit-keyframes remplisage {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes remplisage {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bloc-propositions {
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -630,6 +711,12 @@ h2 span {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 25px;
+  }
+  .bloc-modif .proposition {
+    margin-right: 14px;
+  }
+  .bloc-modif .proposition .proposition-plat {
+    width: 339px;
   }
   .bloc-modif .propositions {
     margin-right: 14px;
