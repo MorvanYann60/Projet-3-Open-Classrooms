@@ -170,6 +170,15 @@ h2 {
     }
 }
 
+@keyframes animation-texte {
+    0% {
+        width: 260px;
+    }
+    100% {
+        width: 213px;
+    } 
+}
+
 @keyframes rotation {
     0% {
         transform: rotate(180deg);
@@ -212,10 +221,13 @@ h2 {
 
 @media screen and (min-width: 992px) {
     .plat {
-        height: 506px;
+        height: 540px;
         .titre {
             margin-bottom: 30px;
         }
+    }
+    .changement-hauteur {
+        height: 590px;
     }
     .bloc-restaurants {
         width: 50%;

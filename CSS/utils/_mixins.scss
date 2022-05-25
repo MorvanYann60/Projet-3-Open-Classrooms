@@ -53,15 +53,21 @@
         &:hover i {
             animation: rotation 600ms linear both;
         }
+        &:hover .texte-overflow {
+            animation: animation-texte 0.5s both;
+        }
         h3 {
             font-size: 17px;
             padding-left: 5px;
             margin-top: 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
         p {
             font-size: 15px;
             overflow: hidden;
-            /*white-space: nowrap;*/
+            white-space: nowrap;
             text-overflow: ellipsis;
         }
         .proposition-texte {
